@@ -14,7 +14,6 @@ import java.util.Scanner;
 class circulo {
 
     private float radio;
-    private float area;
     private float perimetro;
     private float diametro;
 
@@ -33,12 +32,8 @@ class circulo {
         if (radio < 0.1) {
             System.out.println("Inserte un Número valido");
         } else {
-            diametro = 2 * (radio);
-            perimetro = (float) ((diametro) * Math.PI);
-            area = (float) (Math.pow(2, radio) * Math.PI);
-            System.out.println("El area es " + area);
-            System.out.println("El perimetro es " + perimetro);
-            System.out.println("El diametro es" + diametro);
+            System.out.println("El area es " + Math.pow(radio, 2) * Math.PI);
+            System.out.println("El perimetro es " + ((2*radio) * Math.PI));
         }
 
     }
