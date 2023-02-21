@@ -16,7 +16,18 @@ public class EVA1_8_LLAMADA_FUNCION {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        System.out.println("Inicia main");
+        A();
+        System.out.println("Termina main");
     }
-    
+    public static void A(){
+        System.out.println("inicia a()");
+        B();
+        System.out.println("termina a()");
+    }
+    public static void B(){
+        System.out.println("inicia b()");
+
+        System.out.println("termina b()");
+    }
 }
